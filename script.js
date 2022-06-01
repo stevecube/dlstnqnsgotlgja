@@ -27,6 +27,8 @@ const twentieth = document.getElementById('twentieth');
 const twentyfirst = document.getElementById('twentyfirst');
 const twentysecond = document.getElementById('twentysecond');
 const twentythird = document.getElementById('twentythird');
+const twentyforth = document.getElementById('twentyforth');
+const twentyfifth = document.getElementById('twentyfifth');
 // 변수 선언
 const start_2 = ': ';
 let score = 0;
@@ -55,6 +57,8 @@ const U = 'x³ + 1/x³';
 const V = '(a - b)³';
 const W = 'a³ - b³';
 const X = 'a³ + b³ + c³ - 3abc';
+const Y = 'a²+ b³ + c³ - ab - bc - ca';
+const Z = '(a² + ab + b²)(a² - ab + b²)';
 let b = [
     A,
     B,
@@ -79,6 +83,8 @@ let b = [
     V,
     W,
     X,
+    Y,
+    Z,
 ]
 const AA = 'a² + 2ab + b²';
 const BB = 'a² - 2ab + b²';
@@ -103,7 +109,9 @@ const TT = '(a + b)³ - 3ab(a + b)';
 const UU = '(x + 1/x)³ - 3(x + 1/x)';
 const VV = 'a³ - 3a²b + 3ab² + b³';
 const WW = '(a - b)³ + 3ab(a + b)';
-const XX = '(a + b + c)(a² + b² + c² - ab - bc - ca)';
+const XX = '1/2(a + b + c){(a - b)²(b - c)²(c - a)²}';
+const YY = '1/2{(a - b)²(b - c)²(c - a)²}';
+const ZZ = 'a⁴ + a²b² + b⁴';
 let label1_output = [
     AA,
     BB,
@@ -128,6 +136,8 @@ let label1_output = [
     VV,
     WW,
     XX,
+    YY,
+    ZZ,
 ]
 correct = '맞히셨습니다.';
 incorrect = '맞히지 못하셨습니다. 다시 시도하세요';
@@ -294,6 +304,20 @@ function b21() {
     b = a3;
     console.log(b);
 }
+function b22() {
+    a1 = b.slice(0, 22);
+    a2 = b.splice(23, number-22);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b23() {
+    a1 = b.slice(0, 23);
+    a2 = b.splice(24, number-23);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
 function end() {
     b.pop();
     console.log(b);
@@ -370,6 +394,12 @@ function duplicate_check() {
     else if (random1 == b[21]) {
         b21();
     }
+    else if (random1 == b[22]) {
+        b22();
+    }
+    else if (random1 == b[23]) {
+        b23();
+    }
     else {
         end();
     }
@@ -439,6 +469,12 @@ function duplicate_check() {
     else if (random2 == b[20]) {
         b20();
     }
+    else if (random2 == b[21]) {
+        b21();
+    }
+    else if (random2 == b[22]) {
+        b22();
+    }
     else {
         end();
     }
@@ -505,6 +541,12 @@ function duplicate_check() {
     else if (random3 == b[19]) {
         b19();
     }
+    else if (random3 == b[20]) {
+        b20();
+    }
+    else if (random3 == b[21]) {
+        b21();
+    }
     else {
         end();
     }
@@ -568,6 +610,12 @@ function duplicate_check() {
     else if (random4 == b[18]) {
         b18();
     }
+    else if (random4 == b[19]) {
+        b19();
+    }
+    else if (random4 == b[20]) {
+        b20();
+    }
     else {
         end();
     }
@@ -628,6 +676,12 @@ function duplicate_check() {
     else if (random5 == b[17]) {
         b17();
     }
+    else if (random5 == b[18]) {
+        b18();
+    }
+    else if (random5 == b[19]) {
+        b19();
+    }
     else {
         end();
     }
@@ -685,6 +739,12 @@ function duplicate_check() {
     else if (random6 == b[16]) {
         b16();
     }
+    else if (random6 == b[17]) {
+        b17();
+    }
+    else if (random6 == b[18]) {
+        b18();
+    }
     else {
         end();
     }
@@ -739,6 +799,12 @@ function duplicate_check() {
     else if (random7 == b[15]) {
         b15();
     }
+    else if (random7 == b[16]) {
+        b16();
+    }
+    else if (random7 == b[17]) {
+        b17();
+    }
     else {
         end();
     }
@@ -786,6 +852,12 @@ function duplicate_check() {
     }
     else if (random8 == b[13]) {
         b14();
+    }
+    else if (random8 == b[14]) {
+        b15();
+    }
+    else if (random8 == b[15]) {
+        b16();
     }
     else {
         end();
@@ -835,6 +907,12 @@ function duplicate_check() {
     else if (random9 == b[13]) {
         b13();
     }
+    else if (random9 == b[14]) {
+        b14();
+    }
+    else if (random9 == b[15]) {
+        b15();
+    }
     else {
         end();
     }
@@ -880,6 +958,12 @@ function duplicate_check() {
     else if (random10 == b[12]) {
         b12();
     }
+    else if (random10 == b[13]) {
+        b13();
+    }
+    else if (random10 == b[14]) {
+        b14();
+    }
     else {
         end();
     }
@@ -922,6 +1006,12 @@ function duplicate_check() {
     else if (random11 == b[11]) {
         b11();
     }
+    else if (random11 == b[12]) {
+        b12();
+    }
+    else if (random11 == b[13]) {
+        b13();
+    }
     else {
         end();
     }
@@ -961,6 +1051,12 @@ function duplicate_check() {
     else if (random12 == b[10]) {
         b10();
     }
+    else if (random12 == b[11]) {
+        b11();
+    }
+    else if (random12 == b[12]) {
+        b12();
+    }
     else {
         end();
     }
@@ -997,6 +1093,12 @@ function duplicate_check() {
     else if (random13 == b[9]) {
         b9();
     }
+    else if (random13 == b[10]) {
+        b10();
+    }
+    else if (random13 == b[11]) {
+        b11();
+    }
     else {
         end();
     }
@@ -1028,6 +1130,12 @@ function duplicate_check() {
     else if (random14 == b[8]) {
         b8();
     }
+    else if (random14 == b[9]) {
+        b9();
+    }
+    else if (random14 == b[10]) {
+        b10();
+    }
     else {
         end();
     }
@@ -1056,6 +1164,12 @@ function duplicate_check() {
     else if (random15 == b[7]) {
         b7();
     }
+    else if (random15 == b[8]) {
+        b8();
+    }
+    else if (random15 == b[9]) {
+        b9();
+    }
     else {
         end();
     }
@@ -1081,6 +1195,12 @@ function duplicate_check() {
     else if (random16 == b[6]) {
         b6();
     }
+    else if (random16 == b[7]){
+        b7();
+    }
+    else if (random16 == b[8]) {
+        b8();
+    }
     else {
         end();
     }
@@ -1103,6 +1223,12 @@ function duplicate_check() {
     else if (random17 == b[5]) {
         b5();
     }
+    else if (random17 == b[6]) {
+        b6();
+    }
+    else if (random17 == b[7]) {
+        b7();
+    }
     else {
         end();
     }
@@ -1122,6 +1248,12 @@ function duplicate_check() {
     else if (random18 == b[4]) {
         b4();
     }
+    else if (random18 == b[5]) {
+        b5();
+    }
+    else if (random18 == b[6]) {
+        b6();
+    }
     else {
         end();
     }
@@ -1138,6 +1270,12 @@ function duplicate_check() {
     else if (random19 == b[3]) {
         b3();
     }
+    else if (random19 == b[4]) {
+        b4();
+    }
+    else if (random19 == b[5]) {
+        b5();
+    }
     else {
         end();
     }
@@ -1151,6 +1289,12 @@ function duplicate_check() {
     else if (random20 == b[2]) {
         b2();
     }
+    else if (random20 == b[3]) {
+        b3();
+    }
+    else if (random20 == b[4]) {
+        b4();
+    }
     else {
         end();
     }
@@ -1161,6 +1305,12 @@ function duplicate_check() {
     else if (random21 == b[1]) {
         b1();
     }
+    else if (random21 == b[2]) {
+        b2();
+    }
+    else if (random21 == b[3]) {
+        b3();
+    }
     else {
         end();
     }
@@ -1168,11 +1318,34 @@ function duplicate_check() {
     if (random22 == b[0]) {
         start();
     }
+    else if (random22 == b[1]) {
+        b1();
+    }
+    else if (random22 == b[2])  {
+        b2();
+    }
     else {
         end();
     }
     const random23 = b[Math.floor(Math.random() * b.length)];
     if (random23 == b[0]) {
+        start();
+    }
+    else if (random23 == b[1]) {
+        b1();
+    }
+    else {
+        end();
+    }
+    const random24 = b[Math.floor(Math.random() * b.length)];
+    if (random24 == b[0]) {
+        start();
+    }
+    else {
+        end();
+    }
+    const random25 = b[Math.floor(Math.random() * b.length)];
+    if (random25 == b[0]) {
         start();
     }
     first.innerHTML = random1;
@@ -1198,6 +1371,8 @@ function duplicate_check() {
     twentyfirst.innerHTML = random21;
     twentysecond.innerHTML = random22;
     twentythird.innerHTML = random23;
+    twentyforth.innerHTML = random24;
+    twentyfifth.innerHTML = random25;
 }
 duplicate_check();
 function iftrue() {
@@ -1357,6 +1532,46 @@ outputt.addEventListener('click', function() {
     }
     else if (score == 18) {
         if (input == S) {
+            iftrue();
+        }
+        else {
+            iffalse();
+        }
+    }
+    else if (score == 19) {
+        if (input == T) {
+            iftrue();
+        }
+        else {
+            iffalse();
+        }
+    }
+    else if (score == 20) {
+        if (input == U) {
+            iftrue();
+        }
+        else {
+            iffalse();
+        }
+    }
+    else if (score == 21) {
+        if (input == V) {
+            iftrue();
+        }
+        else {
+            iffalse();
+        }
+    }
+    else if (score == 22) {
+        if (input == W) {
+            iftrue();
+        }
+        else {
+            iffalse();
+        }
+    }
+    else if (score == 23) {
+        if (input == X) {
             iftrue();
         }
         else {

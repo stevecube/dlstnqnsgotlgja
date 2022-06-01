@@ -1,7 +1,7 @@
 body {
     background-color: #ffebcd;
 }
-label {
+button {
     background-color: #7fffd4;
     padding: 5px;
     margin: 5px;
@@ -17,12 +17,16 @@ label-1 {
     margin: 5px;
     padding: 2.5px;
 }
-#l1 label {
+#outputt {
+    width: 50px;
+    height: 30px;
+}
+#l1 button {
     background-color: #93f393;
 }
-#l2 label {
+#l2 button {
     background-color: #f0fff0;
 }
-#l3 label {
+#l3 button {
     background-color: #c0bfff;
 }
