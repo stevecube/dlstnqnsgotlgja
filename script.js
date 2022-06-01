@@ -26,6 +26,7 @@ const nineteenth = document.getElementById('nineteenth');
 const twentieth = document.getElementById('twentieth');
 const twentyfirst = document.getElementById('twentyfirst');
 const twentysecond = document.getElementById('twentysecond');
+const twentythird = document.getElementById('twentythird');
 // 변수 선언
 const start_2 = ': ';
 let score = 0;
@@ -46,9 +47,14 @@ const M = 'x³ + 1';
 const N = 'a³ - b³';
 const O = 'x³ - 1';
 const P = '(x + a)(x + b)(x + c)';
-const Q = '(x - a)(x - b)(x - c';
+const Q = '(x - a)(x - b)(x - c)';
 const R = '(a + b + c)²';
 const S = '(a + b)³';
+const T = 'a³ + b³';
+const U = 'x³ + 1/x³';
+const V = '(a - b)³';
+const W = 'a³ - b³';
+const X = 'a³ + b³ + c³ - 3abc';
 let b = [
     A,
     B,
@@ -69,6 +75,10 @@ let b = [
     Q,
     R,
     S,
+    U,
+    V,
+    W,
+    X,
 ]
 const AA = 'a² + 2ab + b²';
 const BB = 'a² - 2ab + b²';
@@ -89,6 +99,11 @@ const PP = 'x³ + (a + b + c)x² + (ab + bc + ca)x + abc';
 const QQ = 'x³ - (a + b + c)x² + (ab + bc + ca)x - abc';
 const RR  = 'a² + b² + c² + 2(ab + bc + ca)';
 const SS = 'a³ + 3a²b + 3ab² + b³';
+const TT = '(a + b)³ - 3ab(a + b)';
+const UU = '(x + 1/x)³ - 3(x + 1/x)';
+const VV = 'a³ - 3a²b + 3ab² + b³';
+const WW = '(a - b)³ + 3ab(a + b)';
+const XX = '(a + b + c)(a² + b² + c² - ab - bc - ca)';
 let label1_output = [
     AA,
     BB,
@@ -109,6 +124,10 @@ let label1_output = [
     QQ,
     RR,
     SS,
+    UU,
+    VV,
+    WW,
+    XX,
 ]
 correct = '맞히셨습니다.';
 incorrect = '맞히지 못하셨습니다. 다시 시도하세요';
@@ -123,6 +142,162 @@ function change() {
         console.log(lo);
     }
 }
+function start() {
+    b.shift();
+    console.log(b);
+}
+function b1() {
+    a1 = b.slice(0, 1);
+    a2 = b.splice(2, number-1);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b2() {
+    a1 = b.slice(0, 2);
+    a2 = b.splice(3, number-2);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b3() {
+    a1 = b.slice(0, 3);
+    a2 = b.splice(4, number-3);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b4() {
+    a1 = b.slice(0, 4);
+    a2 = b.splice(5, number-4);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b5() {
+    a1 = b.slice(0, 5);
+    a2 = b.splice(6, number-5);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b6() {
+    a1 = b.slice(0, 6);
+    a2 = b.splice(7, number-6);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b7() {
+    a1 = b.slice(0, 7);
+    a2 = b.splice(8, number-7);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b8() {
+    a1 = b.slice(0, 8);
+    a2 = b.splice(9, number-8);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b9() {
+    a1 = b.slice(0, 9);
+    a2 = b.splice(10, number-9);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b10() {
+    a1 = b.slice(0, 10);
+    a2 = b.splice(11, number-9);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b11() {
+    a1 = b.slice(0, 11);
+    a2 = b.splice(12, number-11);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+
+function b12() {
+    a1 = b.slice(0, 13);
+    a2 = b.splice(14, number-13);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b13() {
+    a1 = b.slice(0, 13);
+    a2 = b.splice(14, number-13);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b14() {
+    a1 = b.slice(0, 14);
+    a2 = b.splice(15, number-14);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b15() {
+    a1 = b.slice(0, 15);
+    a2 = b.splice(16, number-15);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b16() {
+    a1 = b.slice(0, 16);
+    a2 = b.splice(17, number-16);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b17() {
+    a1 = b.slice(0, 17);
+    a2 = b.splice(18, number-17);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b18() {
+    a1 = b.slice(0, 18);
+    a2 = b.splice(19, number-18);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b19() {
+    a1 = b.slice(0, 19);
+    a2 = b.splice(20, number-19);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b20() {
+    a1 = b.slice(0, 20);
+    a2 = b.splice(21, number-20);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function b21() {
+    a1 = b.slice(0, 21);
+    a2 = b.splice(22, number-21);
+    a3 = a1.concat(a2);
+    b = a3;
+    console.log(b);
+}
+function end() {
+    b.pop();
+    console.log(b);
+}
 console.log(b);
 let number = b.length;
 function duplicate_check() {
@@ -130,1262 +305,875 @@ function duplicate_check() {
     number -= 1;
     console.log(number);
     if (random1 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random1 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random1 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random1 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random1 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random1 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random1 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7, number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
     }
     else if (random1 == b[7]) {
-        a1 = b.slice(0, 7);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b7();
     }
     else if (random1 == b[8]) {
-        a1 = b.slice(0, 8);
-        a2 = b.splice(9, number-8);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b8();
     }
     else if (random1 == b[9]) {
-        a1 = b.slice(0, 9);
-        a2 = b.splice(10, number-9);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b9();
     }
     else if (random1 == b[10]) {
-        a1 = b.slice(0, 10);
-        a2 = b.splice(11, number-10);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b10();
     }
     else if (random1 == b[11]) {
-        a1 = b.slice(0, 11);
-        a2 = b.splice(12, number-11);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b11();
     }
     else if (random1 == b[12]) {
-        a1 = b.slice(0, 12);
-        a2 = b.splice(13, number-12);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b12();
     }
     else  if (random1 == b[13]) {
-        a1 = b.slice(0, 13);
-        a2 = b.splice(14, number-13);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b13();
     }
     else if (random1 == b[14]) {
-        a1 = b.slice(0, 14);
-        a2 = b.splice(15, number-14);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b14();
     }
     else if (random1 == b[15]) {
-        a1 = b.slice(0, 15);
-        a2 = b.splice(16, number-15);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b15();
     }
     else if (random1 == b[16]) {
-        a1 = b.slice(0, 16);
-        a2 = b.splice(17, number-16);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b16();
     }
-    else if (random2 == b[17]) {
-        a1 = b.slice(0, 17);
-        a2 = b.splice(18, number-17);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+    else if (random1 == b[17]) {
+        b17();
+    }
+    else if (random1 == b[18]) {
+        b18();
+    }
+    else if (random1 == b[19]) {
+        b19();
+    }
+    else if (random1 == b[20]) {
+        b20();
+    }
+    else if (random1 == b[21]) {
+        b21();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random2 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random2 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random2 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random2 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random2 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random2 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random2 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random2 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7, number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
     }
     else if (random2 == b[7]) {
-        a1 = b.slice(0, 7);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b7();
     }
     else if (random2 == b[8]) {
-        a1 = b.slice(0, 8);
-        a2 = b.splice(9, number-8);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b8();
     }
     else if (random2 == b[9]) {
-        a1 = b.slice(0, 9);
-        a2 = b.splice(10, number-9);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b9();
     }
     else if (random2 == b[10]) {
-        a1 = b.slice(0, 10);
-        a2 = b.splice(11, number-10);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b10();
     }
     else if (random2 == b[11]) {
-        a1 = b.slice(0, 11);
-        a2 = b.splice(12, number-11);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b11();
     }
     else if (random2 == b[12]) {
-        a1 = b.slice(0, 12);
-        a2 = b.splice(13, number-12);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b12();
     }
     else if (random2 == b[13]) {
-        a1 = b.slice(0, 13);
-        a2 = b.splice(14, number-13);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b14();
     }
     else if (random2 == b[14]) {
-        a1 = b.slice(0, 14);
-        a2 = b.splice(15, number-14);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b14();
     }
     else if (random2 == b[15]) {
-        a1 = b.slice(0, 15);
-        a2 = b.splice(16, number-15);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b15();
     }
     else if (random2 == b[16]) {
-        a1 = b.slice(0, 16);
-        a2 = b.splice(17, number-16);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b16();
+    }
+    else if (random2 == b[17]) {
+        b17();
+    }
+    else if (random2 == b[18]) {
+        b18();
+    }
+    else if (random2 == b[19]) {
+        b19();
+    }
+    else if (random2 == b[20]) {
+        b20();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random3 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random3 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random3 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random3 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random3 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random3 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random3 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random3 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7, number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
     }
     else if (random3 == b[7]) {
-        a1 = b.slice(0, 7);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b7();
     }
     else if (random3 == b[8]) {
-        a1 = b.slice(0, 8);
-        a2 = b.splice(9, number-8);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b8();
     }
     else if (random3 == b[9]) {
-        a1 = b.slice(0, 9);
-        a2 = b.splice(10, number-9);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b9();
     }
     else if (random3 == b[10]) {
-        a1 = b.slice(0, 10);
-        a2 = b.splice(11, number-10);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b10();
     }
     else if (random3 == b[11]) {
-        a1 = b.slice(0, 11);
-        a2 = b.splice(12, number-11);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b11();
     }
     else if (random3 == b[12]) {
-        a1 = b.slice(0, 12);
-        a2 = b.splice(13, number-12);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b12();
     }
     else if (random3 == b[13]) {
-        a1 = b.slice(0, 13);
-        a2 = b.splice(14, number-13);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b14();
     }
     else if (random3 == b[14]) {
-        a1 = b.slice(0, 14);
-        a2 = b.splice(15, number-14);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b14();
     }
     else if (random3 == b[15]) {
-        a1 = b.slice(0, 15);
-        a2 = b.splice(16, number-15);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b15();
+    }
+    else if (random3 == b[16]) {
+        b16();
+    }
+    else if (random3 == b[17]) {
+        b17();
+    }
+    else if (random3 == b[18]) {
+        b18();
+    }
+    else if (random3 == b[19]) {
+        b19();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random4 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random4 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random4 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random4 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random4 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random4 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random4 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random4 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7, number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
     }
     else if (random4 == b[7]) {
-        a1 = b.slice(0, 7);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b7();
     }
     else if (random4 == b[8]) {
-        a1 = b.slice(0, 8);
-        a2 = b.splice(9, number-8);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b8();
     }
     else if (random4 == b[9]) {
-        a1 = b.slice(0, 9);
-        a2 = b.splice(10, number-9);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b9();
     }
     else if (random4 == b[10]) {
-        a1 = b.slice(0, 10);
-        a2 = b.splice(11, number-10);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b10();
     }
     else if (random4 == b[11]) {
-        a1 = b.slice(0, 11);
-        a2 = b.splice(12, number-11);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b11();
     }
     else if (random4 == b[12]) {
-        a1 = b.slice(0, 12);
-        a2 = b.splice(13, number-12);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b12();
     }
     else if (random4 == b[13]) {
-        a1 = b.slice(0, 13);
-        a2 = b.splice(14, number-13);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b14();
     }
     else if (random4 == b[14]) {
-        a1 = b.slice(0, 14);
-        a2 = b.splice(15, number-14);
+        b14();
+    }
+    else if (random4 == b[15]) {
+        b15();
+    }
+    else if (random4 == b[16]) {
+        b16();
+    }
+    else if (random4 == b[17]) {
+        b17();
+    }
+    else if (random4 == b[18]) {
+        b18();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random5 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random5 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random5 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random5 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random5 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random5 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random5 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random5 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7, number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
     }
     else if (random5 == b[7]) {
-        a1 = b.slice(0, 7);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b7();
     }
     else if (random5 == b[8]) {
-        a1 = b.slice(0, 8);
-        a2 = b.splice(9, number-8);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b8();
     }
     else if (random5 == b[9]) {
-        a1 = b.slice(0, 9);
-        a2 = b.splice(10, number-9);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b9();
     }
     else if (random5 == b[10]) {
-        a1 = b.slice(0, 10);
-        a2 = b.splice(11, number-10);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b10();
     }
     else if (random5 == b[11]) {
-        a1 = b.slice(0, 11);
-        a2 = b.splice(12, number-11);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b11();
     }
     else if (random5 == b[12]) {
-        a1 = b.slice(0, 12);
-        a2 = b.splice(13, number-12);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b12();
     }
     else if (random5 == b[13]) {
-        a1 = b.slice(0, 13);
-        a2 = b.splice(13, number-12);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b13();
+    }
+    else if (random5 == b[14]) {
+        b14();
+    }
+    else if (random5 == b[15]) {
+        b15();
+    }
+    else if (random5 == b[16]) {
+        b16();
+    }
+    else if (random5 == b[17]) {
+        b17();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random6 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random6 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random6 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random6 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random6 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random6 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random6 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random6 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7, number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
     }
     else if (random6 == b[7]) {
-        a1 = b.slice(0, 7);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b7();
     }
     else if (random6 == b[8]) {
-        a1 = b.slice(0, 8);
-        a2 = b.splice(9, number-8);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b8();
     }
     else if (random6 == b[9]) {
-        a1 = b.slice(0, 9);
-        a2 = b.splice(10, number-9);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b9();
     }
     else if (random6 == b[10]) {
-        a1 = b.slice(0, 10);
-        a2 = b.splice(11, number-10);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b10();
     }
     else if (random6 == b[11]) {
-        a1 = b.slice(0, 11);
-        a2 = b.splice(12, number-11);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b11();
     }
-    else if (rasndom6 == b[12]) {
-        a1 = b.slice(0, 12);
-        a2 = b.splice(13, number-12);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+    else if (random6 == b[12]) {
+        b12();
+    }
+    else if (random6 == b[13]) {
+        b14();
+    }
+    else if (random6 == b[14]) {
+        b14();
+    }
+    else if (random6 == b[15]) {
+        b15();
+    }
+    else if (random6 == b[16]) {
+        b16();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random7 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random7 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random7 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random7 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random7 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random7 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random7 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random7 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7, number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
     }
     else if (random7 == b[7]) {
-        a1 = b.slice(0, 7);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b7();
     }
     else if (random7 == b[8]) {
-        a1 = b.slice(0, 8);
-        a2 = b.splice(9, number-8);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b8();
     }
     else if (random7 == b[9]) {
-        a1 = b.slice(0, 9);
-        a2 = b.splice(10, number-9);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b9();
     }
     else if (random7 == b[10]) {
-        a1 = b.slice(0, 10);
-        a2 = b.splice(11, number-10);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b10();
     }
     else if (random7 == b[11]) {
-        a1 = b.slice(0, 11);
-        a2 = b.splice(12, number-11);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b11();
+    }
+    else if (random7 == b[12]) {
+        b12();
+    }
+    else if (random7 == b[13]) {
+        b14();
+    }
+    else if (random7 == b[14]) {
+        b14();
+    }
+    else if (random7 == b[15]) {
+        b15();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random8 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random8 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random8 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random8 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random8 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random8 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random8 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random8 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7, number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
     }
     else if (random8 == b[7]) {
-        a1 = b.slice(0, 7);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b7();
     }
     else if (random8 == b[8]) {
-        a1 = b.slice(0, 8);
-        a2 = b.splice(9, number-8);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b8();
     }
     else if (random8 == b[9]) {
-        a1 = b.slice(0, 9);
-        a2 = b.splice(10, number-9);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b9();
     }
     else if (random8 == b[10]) {
-        a1 = b.slice(0, 10);
-        a2 = b.splice(11, number-10);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b10();
+    }
+    else if (random8 == b[11]) {
+        b11();
+    }
+    else if (random8 == b[12]) {
+        b12();
+    }
+    else if (random8 == b[13]) {
+        b14();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random9 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random9 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random9 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random9 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random9 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random9 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random9 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random9 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7, number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
     }
     else if (random9 == b[7]) {
-        a1 = b.slice(0, 7);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b7();
     }
     else if (random9 == b[8]) {
-        a1 = b.slice(0, 8);
-        a2 = b.splice(9, number-8);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b8();
     }
     else if (random9 == b[9]) {
-        a1 = b.slice(0, 9);
-        a2 = b.splice(10, number-9);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b9();
+    }
+    else if (random9 == b[10]) {
+        b10();
+    }
+    else if (random9 == b[11]) {
+        b11();
+    }
+    else if (random9 == b[12]) {
+        b12();
+    }
+    else if (random9 == b[13]) {
+        b13();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random10 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random10 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random10 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random10 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random10 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random10 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random10 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random10 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7, number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
     }
     else if (random10 == b[7]) {
-        a1 = b.slice(0, 7);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b7();
     }
     else if (random10 == b[8]) {
-        a1 = b.slice(0, 8);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b8();
+    }
+    else if (random10 == b[9]) {
+        b9();
+    }
+    else if (random10 == b[10]) {
+        b10();
+    }
+    else if (random10 == b[11]) {
+        b11();
+    }
+    else if (random10 == b[12]) {
+        b12();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random11 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random11 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random11 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random11 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random11 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random11 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random11 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random11 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7, number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
     }
     else if (random11 == b[7]) {
-        a1 = b.slice(0, 7);
-        a2 = b.splice(8, number-7);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b7();
+    }
+    else if (random11 == b[8]) {
+        b8();
+    }
+    else if (random11 == b[9]) {
+        b9();
+    }
+    else if (random11 == b[10]) {
+        b10();
+    }
+    else if (random11 == b[11]) {
+        b11();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random12 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random12 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random12 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random12 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random12 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random12 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random12 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
     }
     else if (random12 == b[6]) {
-        a1 = b.slice(0, 6);
-        a2 = b.splice(7,  number-6);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b6();
+    }
+    else if (random12 == b[7]) {
+        b7();
+    }
+    else if (random12 == b[8]) {
+        b8();
+    }
+    else if (random12 == b[9]) {
+        b9();
+    }
+    else if (random12 == b[10]) {
+        b10();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random13 = b[Math.floor(Math.random() * b.length)];
     number -= 1;
     console.log(number);
     if (random13 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random13 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random13 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random13 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random13 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
     }
     else if (random13 == b[5]) {
-        a1 = b.slice(0, 5);
-        a2 = b.splice(6, number-5);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b5();
+    }
+    else if (random13 == b[6]) {
+        b6();
+    }
+    else if (random13 == b[7]) {
+        b7();
+    }
+    else if (random13 == b[8]) {
+        b8();
+    }
+    else if (random13 == b[9]) {
+        b9();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random14 = b[Math.floor(Math.random() * b.length)];
     if (random14 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random14 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random14 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random14 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
     }
     else if (random14 == b[4]) {
-        a1 = b.slice(0, 4);
-        a2 = b.splice(5, number-4);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b4();
+    }
+    else if (random14 == b[5]) {
+        b5();
+    }
+    else if (random14 == b[6]) {
+        b6();
+    }
+    else if (random14 == b[7]) {
+        b7();
+    }
+    else if (random14 == b[8]) {
+        b8();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random15 = b[Math.floor(Math.random() * b.length)];
     if (random15 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random15 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random15 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
     }
     else if (random15 == b[3]) {
-        a1 = b.slice(0, 3);
-        a2 = b.splice(4, number-3);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b3();
+    }
+    else if (random15 == b[4]) {
+        b4();
+    }
+    else if (random15 == b[5]) {
+        b5();
+    }
+    else if (random15 == b[6]) {
+        b6();
+    }
+    else if (random15 == b[7]) {
+        b7();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random16 = b[Math.floor(Math.random() * b.length)];
     if (random16 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random16 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
     }
     else if (random16 == b[2]) {
-        a1 = b.slice(0, 2);
-        a2 = b.splice(3, number-2);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b2();
+    }
+    else if (random16 == b[3]) {
+        b3();
+    }
+    else if (random16 == b[4]) {
+        b4();
+    }
+    else if (random16 == b[5]) {
+        b5();
+    }
+    else if (random16 == b[6]) {
+        b6();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random17 = b[Math.floor(Math.random() * b.length)];
     if (random17 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
     }
     else if (random17 == b[1]) {
-        a1 = b.slice(0, 1);
-        a2 = b.splice(2, number-1);
-        a3 = a1.concat(a2);
-        b = a3;
-        console.log(b);
+        b1();
+    }
+    else if (random17 == b[2]) {
+        b2();
+    }
+    else if (random17 == b[3]) {
+        b3();
+    }
+    else if (random17 == b[4]) {
+        b4();
+    }
+    else if (random17 == b[5]) {
+        b5();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random18 = b[Math.floor(Math.random() * b.length)];
     if (random18 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
+    }
+    else if (random18 == b[1]) {
+        b1();
+    }
+    else if (random18 == b[2]) {
+        b2();
+    }
+    else if (random18 == b[3]) {
+        b3();
+    }
+    else if (random18 == b[4]) {
+        b4();
     }
     else {
-        b.pop();
-        console.log(b);
+        end();
     }
     const random19 = b[Math.floor(Math.random() * b.length)];
     if (random19 == b[0]) {
-        b.shift();
-        console.log(b);
+        start();
+    }
+    else if (random19 == b[1]) {
+        b1();
+    }
+    else if (random19 == b[2]) {
+        b2();
+    }
+    else if (random19 == b[3]) {
+        b3();
+    }
+    else {
+        end();
+    }
+    const random20 = b[Math.floor(Math.random() * b.length)];
+    if (random20 == b[0]) {
+        start();
+    }
+    else if (random20 == b[1]) {
+        b1();
+    }
+    else if (random20 == b[2]) {
+        b2();
+    }
+    else {
+        end();
+    }
+    const random21 = b[Math.floor(Math.random() * b.length)];
+    if (random21 == b[0]) {
+        start();
+    }
+    else if (random21 == b[1]) {
+        b1();
+    }
+    else {
+        end();
+    }
+    const random22 = b[Math.floor(Math.random() * b.length)];
+    if (random22 == b[0]) {
+        start();
+    }
+    else {
+        end();
+    }
+    const random23 = b[Math.floor(Math.random() * b.length)];
+    if (random23 == b[0]) {
+        start();
     }
     first.innerHTML = random1;
     second.innerHTML = random2;
@@ -1406,6 +1194,10 @@ function duplicate_check() {
     seventeenth.innerHTML = random17;
     eightteenth.innerHTML = random18;
     nineteenth.innerHTML = random19;
+    twentieth.innerHTML = random20;
+    twentyfirst.innerHTML = random21;
+    twentysecond.innerHTML = random22;
+    twentythird.innerHTML = random23;
 }
 duplicate_check();
 function iftrue() {

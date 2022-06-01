@@ -1,0 +1,28 @@
+body {
+    background-color: #ffebcd;
+}
+label {
+    background-color: #7fffd4;
+    padding: 5px;
+    margin: 5px;
+}
+label-1 {
+    background-color: #000fff;
+    color: #ffffff;
+}
+#spancontainer {
+    background-color: #7fffd4;
+}
+#output {
+    margin: 5px;
+    padding: 2.5px;
+}
+#l1 label {
+    background-color: #93f393;
+}
+#l2 label {
+    background-color: #f0fff0;
+}
+#l3 label {
+    background-color: #c0bfff;
+}
